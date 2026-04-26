@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bhakti vs Sufi Movement: One Framework for UPSC — C-Line IAS</title>
+<meta name="description" content="UPSC History Optional: Compare Bhakti and Sufi movements. Similarities, differences, synthesis. 7-min framework. PYQ 2022, 2019, 2016, 2014.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e1a;
+    --card:#111827;
+    --card-2:#1a2332;
+    --line:#1f2937;
+    --text:#f9fafb;
+    --text-2:#9ca3af;
+    --text-3:#6b7280;
+    --accent:#fbbf24;
+    --red:#ef4444;
+    --green:#10b981;
+    --purple:#8b5cf6;
+    --orange:#f97316;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:1.0625rem;-webkit-font-smoothing:antialiased;position:relative}
+
+  body::before{
+    content:'CLINE ACADEMY';
+    position:fixed;
+    left:0.25rem;
+    top:50%;
+    transform:translateY(-50%) rotate(-90deg);
+    transform-origin:center;
+    font-size:.7rem;
+    font-weight:800;
+    letter-spacing:.35em;
+    color:rgba(251,191,36,.1);
+    z-index:0;
+    pointer-events:none;
+    white-space:nowrap;
+  }
+
+ .nav{
+    position:sticky;
+    top:0;
+    background:rgba(10,14,26,.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+    z-index:100;
+    padding:1rem 0;
+  }
+ .nav-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+ .nav-logo{
+    font-weight:900;
+    font-size:1.25rem;
+    color:var(--text);
+    letter-spacing:-.03em;
+    margin-left:-0.5rem;
+    text-decoration:none;
+  }
+ .nav-links{display:flex;gap:2rem;font-size:.9rem}
+ .nav-links a{color:var(--text-2);font-weight:600;transition:.2s;text-decoration:none}
+ .nav-links a:hover,.nav-links a.active{color:var(--accent);text-decoration:none}
+
+ .container{max-width:720px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,2.75rem);font-weight:900;line-height:1.2;margin:0 0 1rem;letter-spacing:-.02em}
+  h2{font-size:1.625rem;font-weight:800;margin:3.5rem 0 1.5rem;color:var(--text);letter-spacing:-.01em}
+  h3{font-size:1.25rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--text)}
+  p{color:var(--text-2);margin-bottom:1.5rem}
+  strong{color:var(--text);font-weight:700}
+  ul,ol{color:var(--text-2);margin:1.5rem 0;padding-left:1.5rem}
+  li{margin-bottom:.75rem}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+
+ .article-header{padding:5rem 0 2rem}
+ .meta{font-size:.9rem;color:var(--text-3);margin-bottom:2rem;display:flex;gap:1.5rem;flex-wrap:wrap}
+ .tag{
+    display:inline-block;
+    background:rgba(139,92,246,.1);
+    color:var(--purple);
+    border:1px solid rgba(139,92,246,.2);
+    padding:.25rem.8rem;
+    border-radius:6px;
+    font-size:.8rem;
+    font-weight:600;
+  }
+
+ .callout{
+    background:rgba(251,191,36,.08);
+    border-left:3px solid var(--accent);
+    padding:1.75rem;
+    border-radius:0 12px 12px 0;
+    margin:2.5rem 0;
+  }
+ .callout p{color:var(--text);margin:0;font-weight:500}
+
+ .warning-box{
+    background:rgba(239,68,68,.08);
+    border-left:3px solid var(--red);
+    padding:1.75rem;
+    border-radius:0 12px 12px 0;
+    margin:2.5rem 0;
+  }
+ .warning-box p{color:var(--text);margin:0}
+ .warning-box strong{color:var(--red)}
+
+ .compare-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:2.5rem 0;
+    font-size:.95rem;
+  }
+ .compare-table th{
+    background:var(--card-2);
+    color:var(--text);
+    font-weight:700;
+    text-align:left;
+    padding:1.25rem 1rem;
+    border-bottom:2px solid var(--line);
+  }
+ .compare-table th:first-child{
+    background:var(--card);
+    color:var(--text-3);
+    font-size:.875rem;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+  }
+ .compare-table th:nth-child(2){color:var(--orange)}
+ .compare-table th:nth-child(3){color:var(--green)}
+ .compare-table td{
+    padding:1.25rem 1rem;
+    border-bottom:1px solid var(--line);
+    color:var(--text-2);
+    vertical-align:top;
+  }
+ .compare-table td:first-child{
+    font-weight:600;
+    color:var(--text);
+    background:var(--card);
+  }
+ .compare-table tr:last-child td{border-bottom:0}
+
+ .framework-box{
+    background:var(--card);
+    border:1px solid var(--line);
+    padding:2rem;
+    border-radius:16px;
+    margin:3rem 0;
+  }
+ .framework-box h3{margin-top:0;color:var(--accent)}
+ .framework-step{
+    background:var(--card-2);
+    padding:1.25rem 1.5rem;
+    border-radius:10px;
+    margin:1rem 0;
+    border-left:3px solid var(--accent);
+  }
+ .framework-step strong{color:var(--accent)}
+
+ .synthesis-box{
+    background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(16,185,129,.1));
+    border:2px solid var(--purple);
+    padding:2rem;
+    border-radius:16px;
+    margin:3rem 0;
+  }
+ .synthesis-box h3{margin-top:0;color:var(--purple)}
+ .synthesis-box p{color:var(--text);margin-bottom:1rem}
+ .synthesis-box strong{color:var(--purple)}
+
+ .answer-box{
+    background:var(--card-2);
+    border:1px solid var(--line);
+    padding:2rem;
+    border-radius:14px;
+    margin:2.5rem 0;
+    font-family:'Georgia',serif;
+  }
+ .answer-box h4{color:var(--green);font-size:1.125rem;margin:0 0 1rem;font-family:'Inter',sans-serif}
+ .answer-text{color:var(--text-2);line-height:1.9;font-size:1rem}
+ .answer-text strong{color:var(--text)}
+ .word-count{
+    margin-top:1.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--line);
+    font-size:.875rem;
+    color:var(--text-3);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:1rem;
+  }
+
+ .saint-list{background:var(--card);border:1px solid var(--line);padding:2rem;border-radius:16px;margin:3rem 0}
+ .saint-item{display:flex;align-items:start;gap:.75rem;margin-bottom:1rem;color:var(--text-2)}
+ .saint-item::before{content:'→';color:var(--purple);font-weight:700;flex-shrink:0}
+
+ .cta-box{
+    background:linear-gradient(135deg,rgba(251,191,36,.1),rgba(239,68,68,.05));
+    border:2px solid var(--accent);
+    padding:2.5rem;
+    border-radius:16px;
+    text-align:center;
+    margin:4rem 0;
+  }
+ .cta-box h3{font-size:1.5rem;margin:0 0 1rem}
+ .cta-btn{
+    background:var(--red);
+    color:#fff;
+    font-weight:700;
+    padding:1rem 2.5rem;
+    border-radius:12px;
+    display:inline-block;
+    font-size:1.0625rem;
+    border:0;
+    cursor:pointer;
+    transition:.2s;
+    margin-top:1rem;
+    text-decoration:none;
+  }
+ .cta-btn:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(239,68,68,.4);text-decoration:none}
+
+  footer{padding:3rem 0 4rem;text-align:center;color:var(--text-3);font-size:.875rem;border-top:1px solid var(--line);margin-top:5rem}
+
+  @media(max-width:768px){
+    body::before{display:none}
+ .nav-logo{margin-left:0}
+ .nav-links{gap:1rem;font-size:.85rem}
+    body{font-size:1rem}
+ .article-header{padding:3rem 0 1rem}
+    h1{font-size:2rem}
+ .compare-table{font-size:.8rem}
+ .compare-table th,.compare-table td{padding:.75rem .5rem}
+ .framework-box,.answer-box,.saint-list,.synthesis-box{padding:1.5rem}
+  }
+  @media(max-width:480px){
+ .nav-links{display:none}
+ .compare-table{display:block;overflow-x:auto}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">CLINE IAS</a>
+    <div class="nav-links">
+      <a href="/blog" class="active">Blog</a>
+      <a href="/resources">Resources</a>
+      <a href="/pyq">PYQ Solutions</a>
+      <a href="/booklist">Booklist</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <article class="article-header">
+    <div class="meta">
+      <span>May 29, 2026</span>
+      <span class="tag">Medieval India</span>
+      <span class="tag">Comparison</span>
+      <span class="tag">Answer Writing</span>
+    </div>
+    <h1>Bhakti vs Sufi Movement: One Framework</h1>
+    <p style="font-size:1.125rem;color:var(--text-2)">UPSC 2022 Q3(b), 2019 Q2(c), 2016 Q3(a), 2014 Q2(c). Don’t write two separate notes. Write one integrated comparison showing synthesis.</p>
+  </article>
+
+  <p>You see “Compare Bhakti and Sufi movements” in the paper.</p>
+
+  <p>You write Page 1: Bhakti movement. Alvars, Nayanars, Kabir, Nanak, Mirabai, Tulsidas...</p>
+
+  <p>Page 2: Sufi movement. Chishti, Suhrawardi, Qadiri, Naqshbandi, Nizamuddin Auliya...</p>
+
+  <p><strong>You get 9/20.</strong></p>
+
+  <p>Why? Because UPSC doesn’t want two lists. They want <strong>one analysis of interaction</strong>. Similarities, differences, and synthesis.</p>
+
+  <div class="callout">
+    <p><strong>The examiner’s rubric:</strong> Can you show how Bhakti and Sufi movements were parallel responses to orthodoxy, shared ideas, and influenced each other? If yes: 15+/20. If you write two separate notes: 9/20.</p>
+  </div>
+
+  <h2>PYQ Pattern: UPSC Always Asks “Interaction”, Never “Description”</h2>
+
+  <p><strong>2022 Q3(b):</strong> “Examine the similarities between Bhakti and Sufi movements.” — Note: “Similarities” = integration.<br>
+  <strong>2019 Q2(c):</strong> “Bhakti and Sufi movements represented popular protest against orthodoxy.” Comment. — Note: “Popular protest” = common ground.<br>
+  <strong>2016 Q3(a):</strong> “Discuss the interaction between Bhakti and Sufi movements.” — Note: “Interaction” = synthesis.<br>
+  <strong>2014 Q2(c):</strong> “Compare the teachings of Kabir and Guru Nanak with Sufi saints.” — Note: “Compare” = both.</p>
+
+  <p><strong>Never asked:</strong> “Describe Bhakti movement.” “Describe Sufi silsilahs.”</p>
+
+  <h2>The Core Similarities & Differences</h2>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Aspect</th>
+        <th>Bhakti Movement</th>
+        <th>Sufi Movement</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin</td>
+        <td>South India: Alvars (Vaishnava), Nayanars (Shaiva) 6th-9th cent. North: 12th cent onwards.</td>
+        <td>Islamic mysticism. India: 12th cent. Chishti silsilah.</td>
+      </tr>
+      <tr>
+        <td>God Concept</td>
+        <td>Monotheism or Saguna/Nirguna. Personal God: Rama, Krishna, Shiva.</td>
+        <td>Tawhid (Unity of God). Allah. Fana (annihilation in God).</td>
+      </tr>
+      <tr>
+        <td>Path</td>
+        <td>Bhakti (devotion), surrender, love. Guru crucial.</td>
+        <td>Ishq (love), Zikr (remembrance). Pir-Murid relationship.</td>
+      </tr>
+      <tr>
+        <td>Social Stand</td>
+        <td>Anti-caste, anti-ritual. Kabir: “Pothi padh padh jag mua”. Equality.</td>
+        <td>Anti-orthodoxy, anti-Ulema. Nizamuddin: “Sulh-i-kul” (peace with all).</td>
+      </tr>
+      <tr>
+        <td>Language</td>
+        <td>Vernacular: Hindi, Marathi, Tamil, Bengali. Reached masses.</td>
+        <td>Persian + Vernacular: Hindavi, Dakhni. Reached masses.</td>
+      </tr>
+      <tr>
+        <td>Institution</td>
+        <td>No organized church. Temples, maths, individual saints.</td>
+        <td>Khanqahs (hospices), Silsilahs (orders). Chishti, Suhrawardi.</td>
+      </tr>
+      <tr>
+        <td>State Relation</td>
+        <td>Mostly apolitical. Kabir criticized kings. Tulsidas supported.</td>
+        <td>Chishtis avoided state. Nizamuddin refused Sultan’s gifts. Suhrawardis accepted.</td>
+      </tr>
+      <tr>
+        <td>Synthesis</td>
+        <td>Kabir, Nanak, Dadu: Combined Bhakti + Sufi ideas. Nirguna.</td>
+        <td>Sufis adopted Indian music (qawwali), yoga practices.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <p><strong>Don’t mug this table.</strong> Remember 1 line: “Both were popular, anti-orthodoxy, vernacular, monotheistic movements. Bhakti = Hindu, Sufi = Islamic, but synthesized via Kabir, Nanak.” That’s enough for 20 marks.</p>
+  </div>
+
+  <h2>The Synthesis: Where They Met</h2>
+
+  <div class="synthesis-box">
+    <h3>The Big Idea: Bhakti + Sufi = Composite Culture</h3>
+    <p><strong>Kabir (1440-1518):</strong> “Allah-Ram ek hai”. Rejected both Hindu ritual and Islamic Sharia. Nirguna Bhakti + Sufi Wahdat-ul-Wujud.</p>
+    <p><strong>Guru Nanak (1469-1539):</strong> “Na Hindu, na Musalman”. Combined Bhakti devotion + Sufi pir-murid + Islamic monotheism. Founded Sikhism.</p>
+    <p><strong>Dadu Dayal (1544-1603):</strong> “Dadu-path”. Rejected caste, idol worship. Influenced by both.</p>
+    <p><strong>Sufis:</strong> Adopted Indian music (qawwali from bhajans), yoga (zikr), local customs. Nizamuddin Auliya’s langar open to all.</p>
+    <p style="margin-bottom:0"><strong>Result:</strong> Composite culture. Hindi/Urdu literature, qawwali, shared shrines (Ajmer, Nizamuddin).</p>
+  </div>
+
+  <h2>The 7-Minute Comparison Framework</h2>
+
+  <div class="framework-box">
+    <h3>Structure: Similarities → Differences → Synthesis → Conclusion</h3>
+    
+    <div class="framework-step">
+      <strong>1. Intro (30 sec):</strong> 1 line. “Bhakti (6th-17th cent) and Sufi (12th-17th cent) movements were parallel popular responses to orthodoxy, with significant interaction.”
+    </div>
+
+    <div class="framework-step">
+      <strong>2. Similarities (2 min):</strong> 3 points. This is 40% of marks.<br>
+      → <strong>Anti-orthodoxy:</strong> Both rejected ritual, caste, priestly class. Kabir vs Ulema. Source: Bijak, Nizamuddin’s teachings.<br>
+      → <strong>Vernacular:</strong> Both used local languages to reach masses. Hindi, Marathi, Hindavi. Source: Kabir’s dohas, Amir Khusrau.<br>
+      → <strong>Monotheism + Love:</strong> Both stressed personal God, devotion/love (Bhakti/Ishq), Guru/Pir crucial.
+    </div>
+
+    <div class="framework-step">
+      <strong>3. Differences (2 min):</strong> 2 points. Don’t overdo.<br>
+      → <strong>Origin:</strong> Bhakti = Hindu tradition (Upanishads, Gita). Sufi = Islamic mysticism (Quran, Hadith).<br>
+      → <strong>Institution:</strong> Bhakti = no church, individual saints. Sufi = Khanqahs, organized silsilahs (Chishti, Suhrawardi).
+    </div>
+
+    <div class="framework-step">
+      <strong>4. Synthesis (1.5 min):</strong> 2 points. This is where you get 15+.<br>
+      → <strong>Saints:</strong> Kabir, Nanak, Dadu combined both. “Allah-Ram ek hai”. Source: Bijak.<br>
+      → <strong>Culture:</strong> Sufis adopted Indian music (qawwali), yoga. Bhakti adopted Sufi ideas of Pir. Composite culture emerged.
+    </div>
+
+    <div class="framework-step">
+      <strong>5. Conclusion (1 min):</strong> 1 line. “Bhakti and Sufi were two streams of same river of popular protest, leading to synthesis and composite culture.”
+    </div>
+    
+    <p style="margin-bottom:0"><strong>Total: 7 minutes. 170 words. Integrated. 16+/20.</strong></p>
+  </div>
+
+  <h2>The Full Answer: 2022 Q3(b) Solved</h2>
+
+  <div class="answer-box">
+    <h4>Q: Examine the similarities between Bhakti and Sufi movements. (15 marks)</h4>
+    <div class="answer-text">
+      <p><strong>Intro:</strong> Bhakti (6th-17th cent) and Sufi (12th-17th cent) movements were parallel popular responses to religious orthodoxy, with significant similarities and interaction.</p>
+      
+      <p><strong>Similarities:</strong> Both rejected ritualism and caste orthodoxy. Kabir condemned Brahmin rituals: “Pothi padh padh jag mua”, while Nizamuddin Auliya practiced Sulh-i-kul (peace with all), rejecting Ulema orthodoxy. Both used vernacular languages to reach masses: Kabir/Nanak in Hindi, Amir Khusrau in Hindavi. Both stressed monotheism and personal devotion — Bhakti (love for God), Ishq (Sufi love for Allah) — with Guru/Pir as mediator. Source: Bijak, Nizamuddin’s discourses.</p>
+      
+      <p><strong>Differences:</strong> Bhakti originated in Hindu tradition (Upanishads, Gita), while Sufi in Islamic mysticism (Quran). Bhakti had no organized church; Sufi had Khanqahs and silsilahs like Chishti, Suhrawardi.</p>
+      
+      <p><strong>Synthesis:</strong> Interaction produced saints like Kabir and Nanak who combined both: “Allah-Ram ek hai”. Sufis adopted Indian music (qawwali) and yoga practices. Result was composite culture in language (Hindi/Urdu), music, and shared shrines.</p>
+      
+      <p><strong>Conclusion:</strong> Bhakti and Sufi were two streams of same river of popular protest against orthodoxy, leading to synthesis and composite culture in medieval India.</p>
+    </div>
+    <div class="word-count">
+      <span><strong>Word count:</strong> 166</span>
+      <span><strong>Time:</strong> 6 min 45 sec</span>
+      <span><strong>Marks:</strong> 12-13/15</span>
+    </div>
+  </div>
+
+  <h2>Key Saints to Know (Pick 3 Max)</h2>
+
+  <div class="saint-list">
+    <h3 style="margin-top:0">Bhakti Saints:</h3>
+    <div class="saint-item">
+      <div><strong>Kabir (1440-1518):</strong> Nirguna. “Allah-Ram ek hai”. Rejected both Hindu/Muslim ritual. Weaver. Synthesis icon.</div>
+    </div>
+    <div class="saint-item">
+      <div><strong>Guru Nanak (1469-1539):</strong> Founder Sikhism. “Na Hindu, na Musalman”. Combined Bhakti devotion + Sufi monotheism.</div>
+    </div>
+    <div class="saint-item">
+      <div><strong>Mirabai (1498-1546):</strong> Saguna. Krishna devotion. Woman saint. Challenged patriarchy.</div>
+    </div>
+    
+    <h3 style="margin-top:2rem">Sufi Saints:</h3>
+    <div class="saint-item">
+      <div><strong>Nizamuddin Auliya (1238-1325):</strong> Chishti. Sulh-i-kul. Langar for all. Avoided state.</div>
+    </div>
+    <div class="saint-item">
+      <div><strong>Amir Khusrau (1253-1325):</strong> Disciple of Nizamuddin. Hindavi poetry, qawwali. Synthesis icon.</div>
+    </div>
+    <div class="saint-item">
+      <div><strong>Sheikh Salim Chishti (1478-1572):</strong> Akbar visited. Fatehpur Sikri built. State link.</div>
+    </div>
+  </div>
+
+  <h2>What NOT to Write</h2>
+
+  <div class="warning-box">
+    <p><strong>Avoid these — they show you didn’t understand interaction:</strong></p>
+    <p>1. <strong>“Bhakti = Hindu, Sufi = Muslim. No relation.”</strong> — False. UPSC wants synthesis.<br>
+    2. <strong>Listing all 12 Alvars + 63 Nayanars</strong> — Pick 1: Andal, Karaikkal Ammaiyar. Done.<br>
+    3. <strong>Listing all Sufi silsilahs</strong> — Pick 2: Chishti (popular), Suhrawardi (state-linked). Done.<br>
+    4. <strong>“Sufis converted Hindus”</strong> — Debatable, not main point. Stick to synthesis.<br>
+    5. <strong>“Bhakti declined after 17th cent”</strong> — Question didn’t ask. Stick to medieval period.</p>
+  </div>
+
+  <h2>Your 3-Day Prep Plan</h2>
+
+  <div class="framework-box">
+    <p><strong>Day 1:</strong> Memorize table above. 5 rows: Origin, God, Path, Social, Synthesis. 30 min.<br>
+    <strong>Day 2:</strong> Pick 3 saints: Kabir, Nanak, Nizamuddin. Write 1 line each on synthesis. Write 2022 question using framework. 7 min.<br>
+    <strong>Day 3:</strong> Revise. Write 2019 question. 7 min. Done.</p>
+    <p style="margin-bottom:0"><strong>Total: 45 minutes.</strong> Not 5 hours reading Satish Chandra Ch 5.</p>
+  </div>
+
+  <h2>Bottom Line</h2>
+
+  <p>UPSC doesn’t want two separate notes on Bhakti and Sufi.</p>
+
+  <p>They want one integrated analysis: <strong>“Both were anti-orthodoxy, vernacular, monotheistic. Bhakti = Hindu, Sufi = Islamic. But Kabir/Nanak synthesized. Result: Composite culture.”</strong></p>
+
+  <p><strong>Similarities > Differences. Synthesis > Separation. 7 minutes > 20 minutes.</strong></p>
+
+  <div class="cta-box">
+    <h3>This is how I teach Medieval India</h3>
+    <p>4x10-min videos daily. Every PYQ comparison broken into 7-min frameworks. Red pen on your answers. We don’t write two essays. We write one synthesis.</p>
+    <a href="mailto:info@clineacademy.com?subject=June 2026 Batch Enquiry" class="cta-btn">
+      Email Me: info@clineacademy.com
+    </a>
+    <p style="font-size:.875rem;color:var(--text-3);margin-top:1rem">8 seats left. I reply in 24 hours. Not my team. Me.</p>
+  </div>
+
+  <p style="margin-top:3rem;font-size:.95rem;color:var(--text-3)"><strong>Next post:</strong> <a href="/blog/vijayanagara-bahmani">Vijayanagara vs Bahmani: Conflict and Culture (Framework)</a></p>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Clever Line Academy Private Limited</p>
+    <p style="margin-top:.5rem">Not affiliated with UPSC. Just obsessed with making you recall.</p>
+  </div>
+</footer>
+
+</body>
+</html>
