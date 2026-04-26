@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page Not Found — C-Line IAS</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e1a;
+    --card:#111827;
+    --line:#1f2937;
+    --text:#f9fafb;
+    --text-2:#9ca3af;
+    --text-3:#6b7280;
+    --accent:#fbbf24;
+    --red:#ef4444;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:1.0625rem;-webkit-font-smoothing:antialiased;position:relative;display:flex;flex-direction:column}
+  
+  body::before{
+    content:'CLINE ACADEMY';
+    position:fixed;
+    left:0.25rem;
+    top:50%;
+    transform:translateY(-50%) rotate(-90deg);
+    transform-origin:center;
+    font-size:.7rem;
+    font-weight:800;
+    letter-spacing:.35em;
+    color:rgba(251,191,36,.1);
+    z-index:0;
+    pointer-events:none;
+    white-space:nowrap;
+  }
+  
+  .nav{
+    position:sticky;
+    top:0;
+    background:rgba(10,14,26,.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+    z-index:100;
+    padding:1rem 0;
+  }
+  .nav-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .nav-logo{
+    font-weight:900;
+    font-size:1.25rem;
+    color:var(--text);
+    letter-spacing:-.03em;
+    margin-left:-0.5rem;
+    text-decoration:none;
+  }
+  .nav-links{display:flex;gap:2rem;font-size:.9rem}
+  .nav-links a{color:var(--text-2);font-weight:600;transition:.2s;text-decoration:none}
+  .nav-links a:hover{color:var(--accent);text-decoration:none}
+  
+  .container{max-width:720px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,8vw,5rem);font-weight:900;line-height:1;margin-bottom:1.5rem;letter-spacing:-.03em;color:var(--accent)}
+  h2{font-size:1.75rem;font-weight:800;margin:0 0 1.5rem;color:var(--text);letter-spacing:-.01em}
+  p{color:var(--text-2);margin-bottom:1.5rem;font-size:1.125rem}
+  strong{color:var(--text);font-weight:700}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  
+  .error-box{
+    background:var(--card);
+    border:1px solid var(--line);
+    padding:3rem 2.5rem;
+    border-radius:20px;
+    text-align:center;
+    margin:2rem 0;
+  }
+  
+  .btn-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+  .btn{
+    background:var(--red);
+    color:#fff;
+    font-weight:700;
+    padding:1rem 2rem;
+    border-radius:12px;
+    font-size:1rem;
+    border:0;
+    cursor:pointer;
+    transition:.2s;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(239,68,68,.4);text-decoration:none}
+  .btn-secondary{
+    background:var(--card-2);
+    color:var(--text);
+    border:1px solid var(--line);
+  }
+  .btn-secondary:hover{background:var(--line);box-shadow:none}
+  
+  .helpful-links{
+    margin-top:3rem;
+    padding-top:2rem;
+    border-top:1px solid var(--line);
+  }
+  .helpful-links p{font-size:.95rem;color:var(--text-3);margin-bottom:1rem}
+  .link-list{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}
+  .link-list a{font-size:.95rem}
+  
+  footer{padding:2rem 0;text-align:center;color:var(--text-3);font-size:.875rem;border-top:1px solid var(--line)}
+  
+  @media(max-width:768px){
+    body::before{display:none}
+    .nav-logo{margin-left:0}
+    .nav-links{gap:1rem;font-size:.85rem}
+    body{font-size:1rem}
+    .error-box{padding:2rem 1.5rem}
+    h1{font-size:3rem}
+    .btn-group{flex-direction:column}
+    .btn{width:100%}
+  }
+  @media(max-width:480px){
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">CLINE IAS</a>
+    <div class="nav-links">
+      <a href="/blog">Blog</a>
+      <a href="/resources">Resources</a>
+      <a href="/pyq">PYQ Solutions</a>
+      <a href="/booklist">Booklist</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="error-box">
+    <h1>404</h1>
+    <h2>This page doesn’t exist.</h2>
+    <p>Just like that 2-hour lecture you sat through — gone from memory.</p>
+    <p><strong>But unlike retention, this is fixable.</strong></p>
+    
+    <div class="btn-group">
+      <a href="/" class="btn">Back to Home</a>
+      <a href="/resources" class="btn btn-secondary">Browse Resources</a>
+    </div>
+    
+    <div class="helpful-links">
+      <p>Looking for something specific?</p>
+      <div class="link-list">
+        <a href="/resources">PYQ Solutions</a>
+        <a href="/booklist">Booklist: What to Skip</a>
+        <a href="/blog">Blog</a>
+        <a href="mailto:info@clineacademy.com">Email Me</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Clever Line Academy Private Limited</p>
+</footer>
+
+</body>
+</html>
