@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>History Optional Resources — C-Line IAS</title>
+<meta name="description" content="UPSC History Optional resources: PYQ solutions, notes, booklist. Updated from CSV.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e1a;
+    --card:#111827;
+    --line:#1f2937;
+    --text:#f9fafb;
+    --text-2:#9ca3af;
+    --text-3:#6b7280;
+    --accent:#fbbf24;
+    --red:#ef4444;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:1.0625rem;-webkit-font-smoothing:antialiased;position:relative}
+
+  body::before{
+    content:'CLINE ACADEMY';
+    position:fixed;
+    left:0.25rem;
+    top:50%;
+    transform:translateY(-50%) rotate(-90deg);
+    transform-origin:center;
+    font-size:.7rem;
+    font-weight:800;
+    letter-spacing:.35em;
+    color:rgba(251,191,36,.1);
+    z-index:0;
+    pointer-events:none;
+    white-space:nowrap;
+  }
+
+ .nav{
+    position:sticky;
+    top:0;
+    background:rgba(10,14,26,.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+    z-index:100;
+    padding:1rem 0;
+  }
+ .nav-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+ .nav-logo{
+    font-weight:900;
+    font-size:1.25rem;
+    color:var(--text);
+    letter-spacing:-.03em;
+    margin-left:-0.5rem;
+    text-decoration:none;
+  }
+ .nav-links{display:flex;gap:2rem;font-size:.9rem}
+ .nav-links a{color:var(--text-2);font-weight:600;transition:.2s;text-decoration:none}
+ .nav-links a:hover,.nav-links a.active{color:var(--accent);text-decoration:none}
+
+ .container{max-width:720px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,2.75rem);font-weight:900;line-height:1.2;margin:0 0 1rem;letter-spacing:-.02em}
+  h2{font-size:1.5rem;font-weight:800;margin:3.5rem 0 1.5rem;color:var(--text);letter-spacing:-.01em;display:flex;align-items:center;gap:.75rem}
+  h2::before{content:'';width:4px;height:24px;background:var(--accent);border-radius:2px}
+  p{color:var(--text-2);margin-bottom:1.5rem}
+  strong{color:var(--text);font-weight:700}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+
+ .hero{padding:5rem 0 2rem;text-align:center}
+ .hero-sub{font-size:1.125rem;color:var(--text-2);max-width:42rem;margin:0 auto 3rem}
+
+ .filter-note{
+    background:rgba(251,191,36,.08);
+    border-left:3px solid var(--accent);
+    padding:1.5rem;
+    border-radius:0 12px 12px 0;
+    margin:2rem 0 4rem;
+  }
+ .filter-note p{color:var(--text);margin:0;font-weight:500}
+
+  /* Bullet list from CSV */
+ .resource-list{list-style:none;margin:2rem 0}
+ .resource-list li{
+    padding:1rem 0;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    padding-left:1.75rem;
+  }
+ .resource-list li::before{
+    content:'→';
+    position:absolute;
+    left:0;
+    color:var(--accent);
+    font-weight:700;
+  }
+ .resource-list li:last-child{border-bottom:0}
+ .resource-list a{
+    color:var(--text);
+    font-weight:600;
+    font-size:1.05rem;
+  }
+ .resource-list a:hover{color:var(--accent)}
+
+ .loading{color:var(--text-3);font-size:.95rem;padding:2rem 0;text-align:center}
+ .error{color:var(--red);font-size:.95rem;padding:1rem;background:rgba(239,68,68,.1);border-radius:8px;margin:1rem 0}
+
+ .cta-box{
+    background:linear-gradient(135deg,rgba(251,191,36,.1),rgba(239,68,68,.05));
+    border:2px solid var(--accent);
+    padding:2.5rem;
+    border-radius:16px;
+    text-align:center;
+    margin:4rem 0;
+  }
+ .cta-box h3{font-size:1.5rem;margin:0 0 1rem}
+ .cta-btn{
+    background:var(--red);
+    color:#fff;
+    font-weight:700;
+    padding:1rem 2.5rem;
+    border-radius:12px;
+    display:inline-block;
+    font-size:1.0625rem;
+    border:0;
+    cursor:pointer;
+    transition:.2s;
+    margin-top:1rem;
+    text-decoration:none;
+  }
+ .cta-btn:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(239,68,68,.4);text-decoration:none}
+
+  footer{padding:3rem 0 4rem;text-align:center;color:var(--text-3);font-size:.875rem;border-top:1px solid var(--line);margin-top:5rem}
+
+  @media(max-width:768px){
+    body::before{display:none}
+   .nav-logo{margin-left:0}
+   .nav-links{gap:1rem;font-size:.85rem}
+    body{font-size:1rem}
+   .hero{padding:3rem 0 1rem}
+    h1{font-size:2rem}
+  }
+  @media(max-width:480px){
+   .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">CLINE IAS</a>
+    <div class="nav-links">
+      <a href="/blog">Blog</a>
+      <a href="/resources" class="active">Resources</a>
+      <a href="/pyq">PYQ Solutions</a>
+      <a href="/booklist">Booklist</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <section class="hero">
+    <h1>History Optional Resources</h1>
+    <p class="hero-sub">No dump. Only what helps you recall in 7 minutes under pressure.</p>
+  </section>
+
+  <div class="filter-note">
+    <p><strong>My filter:</strong> If UPSC hasn’t asked from a topic in 10 years and it’s not foundational, it’s not here. We study priority themes, not encyclopedias.</p>
+  </div>
+
+  <h2>PYQ Solutions 2013–2025</h2>
+  <ul class="resource-list" id="pyq-list">
+    <li class="loading">Loading...</li>
+  </ul>
+
+  <h2>Priority Theme Notes</h2>
+  <ul class="resource-list" id="notes-list">
+    <li class="loading">Loading...</li>
+  </ul>
+
+  <h2>Answer Writing Templates</h2>
+  <ul class="resource-list" id="templates-list">
+    <li class="loading">Loading...</li>
+  </ul>
+
+  <h2>Booklist: What to Read, What to Skip</h2>
+  <ul class="resource-list" id="booklist-list">
+    <li class="loading">Loading...</li>
+  </ul>
+
+  <div class="cta-box">
+    <h3>This is 20% of what my batch gets</h3>
+    <p>The other 80% is: 4x10-min videos daily, red pen feedback on your answers, and me forcing you to write.</p>
+    <a href="mailto:info@clineacademy.com?subject=June 2026 Batch Enquiry" class="cta-btn">
+      Email Me: info@clineacademy.com
+    </a>
+    <p style="font-size:.875rem;color:var(--text-3);margin-top:1rem">8 seats left. I reply in 24 hours. Not my team. Me.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Clever Line Academy Private Limited</p>
+    <p style="margin-top:.5rem">Not affiliated with UPSC. Just obsessed with making you recall.</p>
+  </div>
+</footer>
+
+<script>
+// Simple CSV parser and renderer
+async function loadResources() {
+  const sections = {
+    'pyq': 'pyq-list',
+    'notes': 'notes-list',
+    'templates': 'templates-list',
+    'booklist': 'booklist-list'
+  };
+
+  for (const [file, elementId] of Object.entries(sections)) {
+    try {
+      const response = await fetch(`${file}.csv`);
+      if (!response.ok) throw new Error('File not found');
+
+      const text = await response.text();
+      const lines = text.trim().split('\n');
+      const ul = document.getElementById(elementId);
+      ul.innerHTML = '';
+
+      // Skip header if exists, or start from line 0
+      const startIdx = lines[0].toLowerCase().includes('title')? 1 : 0;
+
+      for (let i = startIdx; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+
+        // Split by comma, but handle commas in quotes
+        const parts = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
+        if (parts.length < 2) continue;
+
+        const title = parts[0].replace(/^"|"$/g, '').trim();
+        const link = parts[1].replace(/^"|"$/g, '').trim();
+
+        if (title && link) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = link;
+          a.textContent = title;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          li.appendChild(a);
+          ul.appendChild(li);
+        }
+      }
+
+      if (ul.children.length === 0) {
+        ul.innerHTML = '<li style="color:var(--text-3);font-style:italic">No resources yet.</li>';
+      }
+
+    } catch (err) {
+      const ul = document.getElementById(elementId);
+      ul.innerHTML = `<li class="error">Could not load ${file}.csv</li>`;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadResources);
+</script>
+
+</body>
+</html>
